@@ -1,0 +1,8 @@
+Fast Fourier transform- Discrete Fourier transform (DFT) is the way of looking at discrete signals in frequency domain. FFT is an algorithm to compute DFT in a fast way. It is generally performed using decimation-in-time (DIT) approach. Here I give a brief introduction to DIT approach and implementation of the same in C++.
+DIT algorithm. Computational efficiency in the evaluation of DFT is achieved by decomposing the sum of ‘N’ terms into sums containing fewer terms. These decomposition schemes give rise to highly efficient algorithms known as fast Fourier transforms. These techniques are based on the ways in which ‘N’ can be factored. For most part I consider values of ‘N’ that are integral powers of ‘2,’ that is:
+N=2m
+
+where ‘m’ is a positive integer.
+
+Here I have taken m=3, so N=8. The signal flow graph in Figure (uploaded) shows a useful representation of a system of equations.
+Here I present C++ code for implementing 8-bit FFT of a given input sequence using DIT algorithm discussed in Figure (uploaded).
